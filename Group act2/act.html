@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <img src="image/ctu image.png">
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
     <style>
         body{
             justify-content: cover;
